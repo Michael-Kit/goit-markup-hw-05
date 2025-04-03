@@ -523,7 +523,7 @@ img {
     visibility: visible;
     pointer-events: auto;
     transition:  opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -572,7 +572,7 @@ img {
     background-color: #404bbf;
     /* Зміна кольору фону при hover */
     border: none;
-    fill: #ffffff;
+   
 }
 
 .icon-close {
@@ -584,10 +584,10 @@ img {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-btn:hover,
-:focus .icon {
+.modal-close-btn:hover .icon-close,
+.modal-close-btn:focus .icon-close {
     fill: #ffffff;
-    /* Колір іконки при hover */
+    /* Колір іконки при hover та focus */
 }
 
 .modal-title {
@@ -669,23 +669,63 @@ img {
 .form-field-checkbox{
     display: flex;
     align-items: center;
+    margin-bottom: 24px;
 }
 .form-checkbox-label{
-    padding-left: 8px 16px;
+    display: flex;
+    align-items: center;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-bottom: 24px;
+    cursor: pointer;
 }
-.checkbox-part{
+
+.custom-checkbox {
     line-height: 1.33;
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: #4d5ae5;
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-textarea:focus{
+
+/* Стилі для іконки всередині span */
+.custom-checkbox-icon {
+    width: 10px;
+    height: 8px;
+    fill: transparent;
+    /* Прозорий фон за замовчуванням */
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+input:checked + .form-checkbox-label .custom-checkbox {
+     fill: #F4F4FD;
+}
+/* Ефект наведення на чекбокс */
+.form-checkbox-label:hover .custom-checkbox {
     border-color: #4d5ae5;
+    /* Зміна кольору рамки при hover */
+}
+
+.form-checkbox-label:hover .custom-checkbox-icon {
+    fill: rgba(46, 47, 66, 0.6);
+    /* Зміна кольору іконки при hover */
+}
+
+/* Підкреслення тексту Privacy Policy */
+.privacy-policy-link {
+    text-decoration: underline;
+    color: #4d5ae5;
+    margin-left: 4px;
+    /* Відступ перед посиланням */
 }
