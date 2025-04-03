@@ -620,7 +620,7 @@ img {
     line-height: 1.16;
     letter-spacing: 0.04em;
     color: #8e8f99;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
     display: inline-block;
 }
 
@@ -632,12 +632,49 @@ img {
     top: 50%;
     left: 16px;
     transform: translateY(-50%);
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 24px;
     fill: #2e2f42;
-    transform: translateY(-50%);
 }
 .button-order{
     display: block;
-    margin: 0 auto;
+    margin: auto;
+    margin-top: 24px;
+}
+
+.modal-textarea{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    background-color: transparent;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    width: 100%;
+    min-height: 120px;
+    border-radius: 4px;
+    padding-left: 16px;
+    padding-top: 8px;
+    outline: transparent;
+    margin-bottom: 16px;
+    resize: none;
+}
+
+.form-field-checkbox{
+    display: flex;
+    align-items: center;
+}
+.form-checkbox-label{
+    padding-left: 8px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    color: #8e8f99;  
+}
+.checkbox-part{
+    line-height: 1.33;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #4d5ae5;
 }
