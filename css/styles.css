@@ -505,6 +505,8 @@ img {
     background-color: #31d0aa;
 }
 
+/* Modal */
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -603,7 +605,10 @@ img {
 }
 
 .modal-form-input:focus{
-    border-color: 1px solid #4d5ae5;
+    border-color:#4d5ae5;
+}
+.modal-form-input:focus + .modal-icon{
+    fill: #4d5ae5;
 }
 .modal-field{
     position: relative;
@@ -631,4 +636,8 @@ img {
     height: 16px;
     fill: #2e2f42;
     transform: translateY(-50%);
+}
+.button-order{
+    display: block;
+    margin: 0 auto;
 }
