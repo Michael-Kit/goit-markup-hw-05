@@ -471,7 +471,6 @@ img {
     height: 24px;
 }
 
-
 .footer-socmedia-block {
     display: flex;
     justify-content: center;
@@ -504,6 +503,70 @@ img {
 {
     background-color: #31d0aa;
 }
+ 
+.subscribe-text{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    display: flex;
+    justify-content: auto;
+    align-items: center;
+    padding-bottom: 16px;
+    margin-left: 80px;
+}
+     
+.footer-form {
+   }
+.footer-form-block{
+
+}
+.footer-form-input{
+    margin-right: 159px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    gap: 16px;
+    padding: 8px 16px;
+    margin-left: 80px;
+}
+
+.fotter-btn-subscribe{
+    
+    top: 0cap;
+    left: 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    min-width: 165px;
+    height: 40px;
+    background-color: #4d5ae5;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    padding: 8px 24px;
+    gap: 16px;
+    border: none;
+    margin-right: 0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.fotter-btn-subscribe:hover {
+    background-color: #31d0aa;
+/* }
+.footer-icon {
+    display: inline-block;
+    margin: 2px 10px 2px 0;
+    /* Відступи іконки */
+} */
 
 /* Modal */
 
@@ -671,7 +734,7 @@ img {
     align-items: center;
     margin-bottom: 24px;
 }
-.form-checkbox-label{
+.form-checkbox-text{
     display: flex;
     align-items: center;
     font-weight: 400;
@@ -680,52 +743,44 @@ img {
     letter-spacing: 0.04em;
     color: #8e8f99;
     cursor: pointer;
+    margin-left: 8px
+
 }
 
-.custom-checkbox {
+a {
     line-height: 1.33;
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: #4d5ae5;
-    width: 16px;
-    height: 16px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 2px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-right: 8px;
+    margin: 0;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         border 250ms cubic-bezier(0.4, 0, 0.2, 1),
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Стилі для іконки всередині span */
-.custom-checkbox-icon {
-    width: 10px;
-    height: 8px;
+.custom-checkbox {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    margin-right: 8px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
     fill: transparent;
-    /* Прозорий фон за замовчуванням */
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-input:checked + .form-checkbox-label .custom-checkbox {
-     fill: #F4F4FD;
-}
-/* Ефект наведення на чекбокс */
-.form-checkbox-label:hover .custom-checkbox {
-    border-color: #4d5ae5;
-    /* Зміна кольору рамки при hover */
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-checkbox-label:hover .custom-checkbox-icon {
-    fill: rgba(46, 47, 66, 0.6);
-    /* Зміна кольору іконки при hover */
+.modal-check:checked + .form-checkbox-text span {
+    width: 16px;
+    height: 16px;
+    background-color: #4d5ae5;
+    border-radius: 2px;
+    border: 1px solid #404bbf;
+    fill: #f4f4fd;
 }
 
-/* Підкреслення тексту Privacy Policy */
-.privacy-policy-link {
-    text-decoration: underline;
-    color: #4d5ae5;
-    margin-left: 4px;
-    /* Відступ перед посиланням */
-}
