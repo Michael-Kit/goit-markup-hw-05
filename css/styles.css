@@ -692,6 +692,7 @@ img {
 .modal-field {
   position: relative;
   margin-bottom: 4px;
+  margin-top: 8px;
 }
 .modal-label {
   font-weight: 400;
