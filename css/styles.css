@@ -497,6 +497,10 @@ img {
 .footer-socmedia-block-soclinks a.circle:focus {
   background-color: #31d0aa;
 }
+.footer-form-block {
+  display: inline-block;
+  margin-left: auto;
+}
 
 .subscribe-text {
   font-weight: 500;
@@ -504,11 +508,9 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
-  display: flex;
   justify-content: auto;
   align-items: center;
   padding-bottom: 16px;
-  margin-left: 80px;
 }
 
 .footer-form-input {
@@ -520,39 +522,41 @@ img {
   align-items: center;
   background-color: transparent;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  gap: 16px;
+  margin-right: 24px;
   padding: 8px 16px;
-  display: inline;
-  margin-left: 80px;
+}
+
+.footer-form-input:focus {
+  background-color: transparent; /* прибираємо синій фон */
+  outline: none; /* прибираємо стандартну рамку */
 }
 
 .fotter-btn-subscribe {
-  left: 30px;
   align-items: center;
   border-radius: 4px;
   min-width: 165px;
   height: 40px;
   background-color: #4d5ae5;
+  color: #fff;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
-  padding: 8px 24px;
+  padding: 8px 16px 8px 24px;
   gap: 16px;
   border: none;
-  display: inline-block;
+  display: inline-flex;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .fotter-btn-subscribe:hover {
   background-color: #31d0aa;
 }
 .footer-icon {
-  padding: 2px;
-  color: #fff;
+  fill: #fff;
+  width: 24px;
+  height: 24px;
 }
-
-/* Modal */
 
 .backdrop {
   position: fixed;
@@ -692,6 +696,7 @@ img {
   fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .button-order {
   display: block;
   margin: auto;
