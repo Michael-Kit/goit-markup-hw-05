@@ -691,7 +691,7 @@ img {
 }
 .modal-field {
   position: relative;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 .modal-label {
   font-weight: 400;
@@ -745,6 +745,7 @@ img {
 .form-field-checkbox {
   display: flex;
   align-items: center;
+  margin-bottom: 24px;
 }
 .form-checkbox-text {
   align-items: center;
