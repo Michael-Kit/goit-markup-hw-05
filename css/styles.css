@@ -745,7 +745,7 @@ img {
 .form-field-checkbox {
   display: flex;
   align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 .form-checkbox-text {
   align-items: center;
