@@ -511,10 +511,6 @@ img {
   margin-left: 80px;
 }
 
-.footer-form {
-}
-.footer-form-block {
-}
 .footer-form-input {
   margin-right: 159px;
   border: 1px solid #fff;
@@ -765,9 +761,7 @@ a {
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-check:checked + .form-checkbox-text span {
-  width: 16px;
-  height: 16px;
+.modal-check:checked + .form-checkbox-text .custom-checkbox {
   background-color: #4d5ae5;
   border-radius: 2px;
   border: 1px solid #404bbf;
