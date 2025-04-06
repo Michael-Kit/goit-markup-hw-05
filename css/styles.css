@@ -535,7 +535,6 @@ img {
   align-items: center;
   background-color: transparent;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  margin-right: 24px;
   padding: 8px 16px;
 }
 
@@ -543,9 +542,8 @@ img {
   color: #ffffff;
   font-size: 12px;
 }
-.footer-form-input:focus {
+.footer-form .footer-form-input:focus {
   background-color: transparent; /* прибираємо синій фон */
-  outline: none; /* прибираємо стандартну рамку */
 }
 
 .fotter-btn-subscribe {
@@ -561,7 +559,6 @@ img {
   letter-spacing: 0.04em;
   text-align: center;
   padding: 8px 16px 8px 24px;
-  gap: 16px;
   border: none;
   justify-content: center;
   cursor: pointer;
@@ -761,7 +758,7 @@ img {
 
 a {
   line-height: 1.33;
-  text-decoration: underline;
+  text-decoration: none;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
   display: inline-flex;
