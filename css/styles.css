@@ -756,9 +756,9 @@ img {
   justify-content: center;
 }
 
-a {
+.privacy-policy-linking {
   line-height: 1.33;
-  text-decoration: none;
+  text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
   display: inline-flex;
